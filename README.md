@@ -18,10 +18,17 @@ and receive settlement notifications that show who owes whom.
 
 ## Current Status
 
-Day 1 — Backend project setup and first health API endpoint.
-
+Day 1 — Spring Boot backend, versioned health API, and React frontend setup.
 ## Run the Backend Locally
 
 ```bash
 cd backend
 ./mvnw spring-boot:run
+```
+## Run the Frontend Locally
+
+```bash
+cd frontend
+npm install
+npm run dev
+```
