@@ -19,6 +19,8 @@ and receive settlement notifications that show who owes whom.
 ## Current Status
 
 Day 1 — Spring Boot backend, versioned health API, and React frontend setup.
+Day 2 — PostgreSQL, Flyway migrations, and ExpenseGroup persistence foundation.
+
 ## Run the Backend Locally
 
 ```bash
@@ -32,3 +34,14 @@ cd frontend
 npm install
 npm run dev
 ```
+
+## Local Database Setup
+
+SettleFlow uses PostgreSQL for persistent data.
+
+Create a local database named `settleflow` and an application user named
+`settleflow_app`. The backend expects the following environment variable in
+its IntelliJ run configuration:
+
+```text
+DATABASE_PASSWORD=your-local-postgresql-password
