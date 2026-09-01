@@ -20,6 +20,7 @@ and receive settlement notifications that show who owes whom.
 
 Day 1 — Spring Boot backend, versioned health API, and React frontend setup.
 Day 2 — PostgreSQL, Flyway migrations, and ExpenseGroup persistence foundation.
+Day 3 — Group-member persistence, relationships, and database validation.
 
 ## Run the Backend Locally
 
@@ -45,3 +46,11 @@ its IntelliJ run configuration:
 
 ```text
 DATABASE_PASSWORD=your-local-postgresql-password
+```
+
+## Domain Model
+
+- `ExpenseGroup` represents a shared-expense group.
+- `GroupMember` represents a participant within one group.
+- A group member belongs to exactly one expense group.
+- Group-member email addresses are unique within a group.
